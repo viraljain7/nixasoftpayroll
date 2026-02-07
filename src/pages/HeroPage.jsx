@@ -6,6 +6,7 @@ import BussinessCount from "@/helperComponents/BussinessCount";
 import Section from "@/helperComponents/Section";
 import PricingSection from "@/helperComponents/Pricing";
 import NixasoftX from "@/helperComponents/NixasoftX";
+import Faq from "@/helperComponents/Faq";
 
 export default function HeroPage() {
   return (
@@ -17,6 +18,7 @@ export default function HeroPage() {
       <NixasoftX/>
       <Section/>
       <PricingSection/>
+      <Faq/>
     </div>
   );
 }

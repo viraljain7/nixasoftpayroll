@@ -1,168 +1,150 @@
-import React from 'react';
+import React from "react"
+
+const plans = [
+  {
+    id: "core",
+    badge: null,
+    title: "Core Plan",
+    subtitle: "For businesses just starting up",
+    description: [
+      "A seamless starter package with essential banking features like a digital-first current account to help you build strong business finances.",
+      "The Core plan offers a powerful dashboard with smooth payout experiences and mobile app access for banking on the go.",
+    ],
+    features: [
+      "Instant beneficiary addition",
+      "Beneficiary payout views",
+      "Mobile app access for anytime banking",
+    ],
+    cta: "Sign Up Now",
+    highlighted: false,
+  },
+  {
+    id: "pro",
+    badge: "Best Value",
+    title: "Pro Plan",
+    subtitle: "For mid-sized businesses",
+    description: [
+      "Streamline your business finances with a reliable and scalable system that gives you complete control.",
+      "Along with Core features, the Pro plan supports multi-user access, granular permissions, and bulk as well as API-based payouts.",
+    ],
+    features: [
+      "Smart bulk payouts and API payouts",
+      "Payout links and bulk payout links",
+      "Multi-user experience with role-based access",
+      "Custom access control and workflows",
+    ],
+    cta: "Sign Up Now",
+    highlighted: true,
+  },
+  {
+    id: "advanced",
+    badge: null,
+    title: "Advanced Plan",
+    subtitle: "For scaled-up businesses",
+    description: [
+      "Our most advanced plan helps automate and digitize every part of your business payments journey.",
+      "This full-platform experience includes vendor payments, automated accounting, department-wise controls, and advanced reporting.",
+    ],
+    features: [
+      "Invoice-based payments",
+      "Industry-leading OCR experience",
+      "Email-based approval workflows",
+      "Accounting system integrations",
+      "Custom report downloads",
+    ],
+    cta: "Sign Up Now",
+    highlighted: false,
+  },
+]
 
 const PricingSection = () => {
- 
-
   return (
-<div className="p-4">
-      <div className="max-w-7xl max-lg:max-w-3xl mx-auto">
+    <section className="p-4">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
         <div className="text-center">
-          <h2 className="text-slate-900 text-3xl font-bold mb-4">Choose the right plan for you</h2>
-          <p className="text-[15px] text-slate-600">Flexible plans designed for individuals, teams, and growing businesses.</p>
+          <h2 className="text-slate-900 text-3xl font-bold">
+            Choose the right plan for your business
+          </h2>
+          <p className="text-slate-600 mt-3 text-[15px]">
+            Flexible banking plans designed for startups, growing teams, and
+            large-scale businesses.
+          </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-6 mt-12 max-sm:max-w-sm max-sm:mx-auto">
-          <div className="border border-gray-300 shadow-sm rounded-md p-6">
-            <h3 className="text-slate-900 text-xl font-semibold mb-3">Starter</h3>
-            <p className="text-[15px] text-slate-600">For Individuals and Small Teams</p>
+        {/* Pricing Cards */}
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-6 mt-12">
+          {plans.map((plan) => (
+            <div
+              key={plan.id}
+              className={`rounded-xl border shadow-sm p-6 flex flex-col justify-between ${
+                plan.highlighted
+                  ? "border-indigo-600"
+                  : "border-gray-200"
+              }`}
+            >
+              {/* Title */}
+              <div>
+                <div className="flex items-center gap-3">
+                  <h3 className="text-xl font-semibold text-slate-900">
+                    {plan.title}
+                  </h3>
+                  {plan.badge && (
+                    <span className="text-xs font-semibold px-2 py-1 rounded-md bg-indigo-600 text-white">
+                      {plan.badge}
+                    </span>
+                  )}
+                </div>
 
-            <div className="mt-8">
-              <h3 className="text-slate-900 text-3xl font-semibold">$10 <sub className="text-slate-600 text-[15px] font-normal">/ per month</sub></h3>
+                <p className="text-slate-600 text-[15px] mt-1">
+                  {plan.subtitle}
+                </p>
+
+                {/* Description */}
+                <div className="mt-6 space-y-3 text-slate-600 text-[15px]">
+                  {plan.description.map((text, i) => (
+                    <p key={i}>{text}</p>
+                  ))}
+                </div>
+
+                {/* Features */}
+                <ul className="mt-8 space-y-4">
+                  {plan.features.map((feature, i) => (
+                    <li
+                      key={i}
+                      className="flex items-start gap-3 text-[15px] text-slate-700"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        viewBox="0 0 24 24"
+                        className="fill-green-600 mt-1"
+                      >
+                        <path d="M9.707 19.121a1 1 0 0 1-1.414 0l-5.647-5.647a1.5 1.5 0 0 1 2.121-2.121L9 14.171l9.525-9.525a1.5 1.5 0 1 1 2.121 2.121z" />
+                      </svg>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* CTA */}
+              <button
+                type="button"
+                className={`mt-10 w-full rounded-md px-4 py-2.5 text-[15px] font-medium ${
+                  plan.highlighted
+                    ? "bg-indigo-600 text-white hover:bg-indigo-700"
+                    : "border border-indigo-600 text-indigo-600 hover:bg-indigo-50"
+                }`}
+              >
+                {plan.cta}
+              </button>
             </div>
-
-            <div className="mt-6">
-              <h4 className="text-slate-900 text-lg font-semibold mb-3">Include</h4>
-              <p className="text-[15px] text-slate-600">Everything you get in this plan</p>
-
-              <ul className="mt-8 space-y-4">
-                <li className="flex items-center text-[15px] text-slate-600 font-medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" className="mr-3 fill-green-500" viewBox="0 0 24 24">
-                    <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000" />
-                  </svg>
-                  50 Page Unlock
-                </li>
-                <li className="flex items-center text-[15px] text-slate-600 font-medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" className="mr-3 fill-green-500" viewBox="0 0 24 24">
-                    <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000" />
-                  </svg>
-                  10 GB Storage
-                </li>
-                <li className="flex items-center text-[15px] text-slate-600 font-medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" className="mr-3 fill-green-500" viewBox="0 0 24 24">
-                    <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000" />
-                  </svg>
-                  6 Team Members
-                </li>
-                <li className="flex items-center text-[15px] text-slate-600 font-medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" className="mr-3 fill-green-500" viewBox="0 0 24 24">
-                    <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000" />
-                  </svg>
-                  Unlimited Book Mark
-                </li>
-                <li className="flex items-center text-[15px] text-slate-600 font-medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" className="mr-3 fill-green-500" viewBox="0 0 24 24">
-                    <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000" />
-                  </svg>
-                  Unlimited basic feature
-                </li>
-              </ul>
-
-              <button type="button" className="w-full mt-8 px-4 py-2.5 text-[15px] font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-md cursor-pointer">Buy Plan</button>
-            </div>
-          </div>
-
-          <div className="border border-indigo-600 shadow-sm rounded-md p-6">
-            <h3 className="text-slate-900 text-xl font-semibold mb-3 flex items-center">Professional <span className="px-2 py-1 text-xs font-semibold text-white bg-indigo-500 rounded-md ml-3">Best Deal</span></h3>
-            <p className="text-[15px] text-slate-600">For Individuals and Largest Teams</p>
-
-            <div className="mt-8">
-              <h3 className="text-slate-900 text-3xl font-semibold">$20 <sub className="text-slate-600 text-[15px] font-normal">/ per month</sub></h3>
-            </div>
-
-            <div className="mt-6">
-              <h4 className="text-slate-900 text-lg font-semibold mb-3">Include</h4>
-              <p className="text-[15px] text-slate-600">Everything you get in this plan</p>
-
-              <ul className="mt-8 space-y-4">
-                <li className="flex items-center text-[15px] text-slate-600 font-medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" className="mr-3 fill-green-500" viewBox="0 0 24 24">
-                    <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000" />
-                  </svg>
-                  100 Page Unlock
-                </li>
-                <li className="flex items-center text-[15px] text-slate-600 font-medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" className="mr-3 fill-green-500" viewBox="0 0 24 24">
-                    <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000" />
-                  </svg>
-                  20 GB Storage
-                </li>
-                <li className="flex items-center text-[15px] text-slate-600 font-medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" className="mr-3 fill-green-500" viewBox="0 0 24 24">
-                    <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000" />
-                  </svg>
-                  8 Team Members
-                </li>
-                <li className="flex items-center text-[15px] text-slate-600 font-medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" className="mr-3 fill-green-500" viewBox="0 0 24 24">
-                    <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000" />
-                  </svg>
-                  Unlimited Book Mark
-                </li>
-                <li className="flex items-center text-[15px] text-slate-600 font-medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" className="mr-3 fill-green-500" viewBox="0 0 24 24">
-                    <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000" />
-                  </svg>
-                  Unlimited basic feature
-                </li>
-              </ul>
-
-              <button type="button" className="w-full mt-8 px-4 py-2.5 text-[15px] font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-md cursor-pointer">Buy Plan</button>
-            </div>
-          </div>
-
-          <div className="border border-gray-300 shadow-sm rounded-md p-6">
-            <h3 className="text-slate-900 text-xl font-semibold mb-3">Business</h3>
-            <p className="text-[15px] text-slate-600">For Multiples and Largest Teams</p>
-
-            <div className="mt-8">
-              <h3 className="text-slate-900 text-3xl font-semibold">$100 <sub className="text-slate-600 text-[15px] font-normal">/ per month</sub></h3>
-            </div>
-
-            <div className="mt-6">
-              <h4 className="text-slate-900 text-lg font-semibold mb-3">Include</h4>
-              <p className="text-[15px] text-slate-600">Everything you get in this plan</p>
-
-              <ul className="mt-8 space-y-4">
-                <li className="flex items-center text-[15px] text-slate-600 font-medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" className="mr-3 fill-green-500" viewBox="0 0 24 24">
-                    <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000" />
-                  </svg>
-                  300 Page Unlock
-                </li>
-                <li className="flex items-center text-[15px] text-slate-600 font-medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" className="mr-3 fill-green-500" viewBox="0 0 24 24">
-                    <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000" />
-                  </svg>
-                  100 GB Storage
-                </li>
-                <li className="flex items-center text-[15px] text-slate-600 font-medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" className="mr-3 fill-green-500" viewBox="0 0 24 24">
-                    <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000" />
-                  </svg>
-                  100 Team Members
-                </li>
-                <li className="flex items-center text-[15px] text-slate-600 font-medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" className="mr-3 fill-green-500" viewBox="0 0 24 24">
-                    <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000" />
-                  </svg>
-                  Unlimited Book Mark
-                </li>
-                <li className="flex items-center text-[15px] text-slate-600 font-medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" className="mr-3 fill-green-500" viewBox="0 0 24 24">
-                    <path d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z" data-original="#000000" />
-                  </svg>
-                  Unlimited basic feature
-                </li>
-              </ul>
-
-              <button type="button" className="w-full mt-8 px-4 py-2.5 text-[15px] font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-md cursor-pointer">Buy Plan</button>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
+  )
+}
 
-  );
-};
-
-export default PricingSection;
+export default PricingSection
