@@ -21,7 +21,7 @@ const steps = [
 
 const StepperForNewAcc = () => {
   return (
-    <section className="py-20 px-4 max-w-7xl mx-auto">
+    <section className="py-20 pt-1 px-4 max-w-7xl mx-auto">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="max-w-4xl mb-16">

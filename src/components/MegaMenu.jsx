@@ -14,7 +14,7 @@ export function MegaMenu({ item }) {
          hover:border-blue-900
          hover:font-bold
          hover:cursor-pointer
-         transition-colors duration-200"
+         transition-colors duration-200 "
 
       >
         {item.name}
@@ -26,13 +26,12 @@ export function MegaMenu({ item }) {
           absolute
     left-0
     top-full
-    z-50
     mt-3
     w-full
-          
+          z-10000
         "
       >
-      <div className="rounded-xl bg-white shadow-xl border border-gray-200 z-50" 
+      <div className="rounded-xl bg-white shadow-xl border border-gray-200 z-5000" 
       >
   <div className="px-8 py-8">
   <div className="grid gap-12 grid-cols-[repeat(auto-fit,minmax(260px,1fr))] auto-rows-min grid-flow-dense ">

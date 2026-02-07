@@ -56,7 +56,7 @@ export default function NixasoftX() {
 
         {/* Table Card */}
         <div className="relative overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
-          <table className="min-w-[900px] w-full border-collapse">
+          <table className="min-w-225 w-full border-collapse">
             <thead>
               <tr className="bg-slate-50">
                 <th className=" z-10 bg-slate-50 p-5 text-left text-sm font-semibold text-slate-700 border-r">

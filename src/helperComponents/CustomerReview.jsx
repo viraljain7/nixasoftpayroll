@@ -70,7 +70,7 @@ const Testimonials = () => {
   return (
     <section className=" relative  py-20 px-4">
           <div className="absolute inset-0 bg-linear-to-br from-[#f5f7ff] via-white to-[#eef2ff]" />
-      <div className="absolute -bottom-40 -left-40 h-[28rem] w-[28rem] rounded-full bg-blue-400/20 blur-3xl" />
+      <div className="absolute -bottom-40 -left-40 h-112 w-md rounded-full bg-blue-400/20 blur-3xl" />
 
       <div  className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
