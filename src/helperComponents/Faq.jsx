@@ -129,7 +129,7 @@ Explore our FAQ section to find answers about Nixasoft's business financial solu
       type="single"
       collapsible
       defaultValue="q1"
-      className="max-w-7xl mx-auto mb-32"
+      className="max-w-7xl mx-auto mb-32 p-8 md:p-0"
       >
       {faqs.map((faq) => (
           <AccordionItem key={faq.id} value={faq.id} >
