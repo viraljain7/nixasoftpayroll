@@ -26,10 +26,10 @@ const StepperForNewAcc = () => {
         {/* Header */}
         <div className="max-w-4xl mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-            How to open a NixapayX powered <br /> Current Account Online?
+            How to open a NixapayX powered <br /> Nixapay account Online?
           </h2>
           <p className="mt-4 text-slate-600 text-lg">
-            NixapayX Business Banking+ comes with a digital current account that
+            NixapayX Business Banking+ comes with a digital Nixapay account that
             can be opened entirely online.
           </p>
         </div>

@@ -1,697 +1,147 @@
 /* -------------------- NAV DATA (SCALABLE) -------------------- */
+
+import {
+  HiCreditCard,
+  HiGlobeAlt,
+  HiLink,
+  HiDocumentText,
+  HiQrcode,
+  HiDeviceMobile,
+  HiLightningBolt,
+  HiRefresh,
+  HiPuzzle,
+  HiOfficeBuilding,
+  HiCurrencyDollar,
+} from "react-icons/hi";
+
+const acceptPaymentsOnline = {
+  title: "ACCEPT PAYMENTS ONLINE",
+  items: [
+    {
+      title: "Payment Aggregator",
+      desc: "Accepting payments made easy",
+      icon: HiCreditCard,
+    },
+    {
+      title: "Payment Gateway",
+      desc: "Payments on Website & App",
+      icon: HiGlobeAlt,
+    },
+    {
+      title: "Payment Links",
+      desc: "Create & send links",
+      icon: HiLink,
+    },
+    {
+      title: "Payment Pages",
+      desc: "Get paid with personalized page",
+      icon: HiDocumentText,
+    },
+    {
+      title: "QR Codes",
+      desc: "Multi-feature QR",
+      icon: HiQrcode,
+    },
+    {
+      title: "UPI Payments",
+      badge: "NEW",
+      desc: "Complete UPI stack",
+      icon: HiDeviceMobile,
+    },
+  ],
+};
+
+const paymentsAndSettlements = {
+  title: "PAYMENTS & SETTLEMENTS",
+  items: [
+    {
+      title: "Magic Checkout",
+      badge: "NEW",
+      desc: "Improve conversions",
+      icon: HiLightningBolt,
+    },
+    {
+      title: "Subscriptions",
+      desc: "Recurring payments",
+      icon: HiRefresh,
+    },
+    {
+      title: "Instant Settlement",
+      desc: "Payments settled faster",
+      icon: HiLightningBolt,
+    },
+    {
+      title: "Optimizer",
+      desc: "Manage gateways",
+      icon: HiPuzzle,
+    },
+  ],
+};
+
+const offlinePayments = {
+  title: "ACCEPT PAYMENTS OFFLINE",
+  items: [
+    {
+      title: "Nixapay POS",
+      desc: "Accept Payments In-Store",
+      icon: HiOfficeBuilding,
+    },
+  ],
+};
+
+const internationalPayments = {
+  title: "ACCEPT INTERNATIONAL PAYMENTS",
+  items: [
+    {
+      title: "International Payments",
+      desc: "Accept payments globally",
+      icon: HiGlobeAlt,
+    },
+    {
+      title: "International Bank Transfers",
+      desc: "USD, GBP, EUR payments",
+      icon: HiCurrencyDollar,
+    },
+  ],
+};
+
 const navigation = [
   {
     name: "Payments",
-    mega: true,
-    columns: [
-      {
-        sections: [
-          {
-            title: "ACCEPT PAYMENTS ONLINE",
-            items: [
-              {
-                title: "Payment Aggregator",
-                desc: "Accepting payments made easy",
-                icon: "💳",
-              },
-              {
-                title: "Payment Gateway",
-                desc: "Payments on Website & App",
-                icon: "🌐",
-              },
-              {
-                title: "Payment Links",
-                desc: "Create & send links",
-                icon: "🔗",
-              },
-              {
-                title: "Payment Pages",
-                desc: "Get paid with personalized page",
-                icon: "📄",
-              },
-              { title: "QR Codes", desc: "Multi-feature QR", icon: "🔲" },
-              {
-                title: "UPI Payments",
-                badge: "NEW",
-                desc: "Complete UPI stack",
-                icon: "📲",
-              },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "PAYMENTS & SETTLEMENTS",
-            items: [
-              {
-                title: "Magic Checkout",
-                badge: "NEW",
-                desc: "Improve conversions",
-                icon: "⚡",
-              },
-              {
-                title: "Subscriptions",
-                desc: "Recurring payments",
-                icon: "🔁",
-              },
-              {
-                title: "Instant Settlement",
-                desc: "Payments settled faster",
-                icon: "⚡",
-              },
-              { title: "Optimizer", desc: "Manage gateways", icon: "🧠" },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "ACCEPT PAYMENTS OFFLINE",
-            items: [
-              {
-                title: "Razorpay POS",
-                desc: "Accept Payments In-Store",
-                icon: "🏪",
-              },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "ACCEPT INTERNATIONAL PAYMENTS",
-            items: [
-              {
-                title: "International Payments",
-                desc: "Accept payments globally",
-                icon: "🌍",
-              },
-              {
-                title: "International Bank Transfers",
-                desc: "USD, GBP, EUR payments",
-                icon: "🏦",
-              },
-            ],
-          },
-        ],
-      },
-    ],
   },
+
   {
     name: "Banking+",
     mega: true,
     columns: [
-      {
-        sections: [
-          {
-            title: "ACCEPT PAYMENTS ONLINE",
-            items: [
-              {
-                title: "Payment Aggregator",
-                desc: "Accepting payments made easy",
-                icon: "💳",
-              },
-              {
-                title: "Payment Gateway",
-                desc: "Payments on Website & App",
-                icon: "🌐",
-              },
-              {
-                title: "Payment Links",
-                desc: "Create & send links",
-                icon: "🔗",
-              },
-              {
-                title: "Payment Pages",
-                desc: "Get paid with personalized page",
-                icon: "📄",
-              },
-              { title: "QR Codes", desc: "Multi-feature QR", icon: "🔲" },
-              {
-                title: "UPI Payments",
-                badge: "NEW",
-                desc: "Complete UPI stack",
-                icon: "📲",
-              },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "PAYMENTS & SETTLEMENTS",
-            items: [
-              {
-                title: "Magic Checkout",
-                badge: "NEW",
-                desc: "Improve conversions",
-                icon: "⚡",
-              },
-              {
-                title: "Subscriptions",
-                desc: "Recurring payments",
-                icon: "🔁",
-              },
-              {
-                title: "Instant Settlement",
-                desc: "Payments settled faster",
-                icon: "⚡",
-              },
-              { title: "Optimizer", desc: "Manage gateways", icon: "🧠" },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "ACCEPT PAYMENTS OFFLINE",
-            items: [
-              {
-                title: "Razorpay POS",
-                desc: "Accept Payments In-Store",
-                icon: "🏪",
-              },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "ACCEPT INTERNATIONAL PAYMENTS",
-            items: [
-              {
-                title: "International Payments",
-                desc: "Accept payments globally",
-                icon: "🌍",
-              },
-              {
-                title: "International Bank Transfers",
-                desc: "USD, GBP, EUR payments",
-                icon: "🏦",
-              },
-            ],
-          },
-        ],
-      },
+      { sections: [acceptPaymentsOnline] },
+      { sections: [paymentsAndSettlements] },
+      { sections: [offlinePayments] },
+      { sections: [internationalPayments] },
     ],
   },
+
   {
     name: "Payroll",
-    mega: true,
-    columns: [
-      {
-        sections: [
-          {
-            title: "ACCEPT PAYMENTS ONLINE",
-            items: [
-              {
-                title: "Payment Aggregator",
-                desc: "Accepting payments made easy",
-                icon: "💳",
-              },
-              {
-                title: "Payment Gateway",
-                desc: "Payments on Website & App",
-                icon: "🌐",
-              },
-              {
-                title: "Payment Links",
-                desc: "Create & send links",
-                icon: "🔗",
-              },
-              {
-                title: "Payment Pages",
-                desc: "Get paid with personalized page",
-                icon: "📄",
-              },
-              { title: "QR Codes", desc: "Multi-feature QR", icon: "🔲" },
-              {
-                title: "UPI Payments",
-                badge: "NEW",
-                desc: "Complete UPI stack",
-                icon: "📲",
-              },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "PAYMENTS & SETTLEMENTS",
-            items: [
-              {
-                title: "Magic Checkout",
-                badge: "NEW",
-                desc: "Improve conversions",
-                icon: "⚡",
-              },
-              {
-                title: "Subscriptions",
-                desc: "Recurring payments",
-                icon: "🔁",
-              },
-              {
-                title: "Instant Settlement",
-                desc: "Payments settled faster",
-                icon: "⚡",
-              },
-              { title: "Optimizer", desc: "Manage gateways", icon: "🧠" },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "ACCEPT PAYMENTS OFFLINE",
-            items: [
-              {
-                title: "Razorpay POS",
-                desc: "Accept Payments In-Store",
-                icon: "🏪",
-              },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "ACCEPT INTERNATIONAL PAYMENTS",
-            items: [
-              {
-                title: "International Payments",
-                desc: "Accept payments globally",
-                icon: "🌍",
-              },
-              {
-                title: "International Bank Transfers",
-                desc: "USD, GBP, EUR payments",
-                icon: "🏦",
-              },
-            ],
-          },
-        ],
-      },
-    ],
   },
+
   {
     name: "Engage",
-    mega: true,
-    columns: [
-      {
-        sections: [
-          {
-            title: "ACCEPT PAYMENTS ONLINE",
-            items: [
-              {
-                title: "Payment Aggregator",
-                desc: "Accepting payments made easy",
-                icon: "💳",
-              },
-              {
-                title: "Payment Gateway",
-                desc: "Payments on Website & App",
-                icon: "🌐",
-              },
-              {
-                title: "Payment Links",
-                desc: "Create & send links",
-                icon: "🔗",
-              },
-              {
-                title: "Payment Pages",
-                desc: "Get paid with personalized page",
-                icon: "📄",
-              },
-              { title: "QR Codes", desc: "Multi-feature QR", icon: "🔲" },
-              {
-                title: "UPI Payments",
-                badge: "NEW",
-                desc: "Complete UPI stack",
-                icon: "📲",
-              },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "PAYMENTS & SETTLEMENTS",
-            items: [
-              {
-                title: "Magic Checkout",
-                badge: "NEW",
-                desc: "Improve conversions",
-                icon: "⚡",
-              },
-              {
-                title: "Subscriptions",
-                desc: "Recurring payments",
-                icon: "🔁",
-              },
-              {
-                title: "Instant Settlement",
-                desc: "Payments settled faster",
-                icon: "⚡",
-              },
-              { title: "Optimizer", desc: "Manage gateways", icon: "🧠" },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "ACCEPT PAYMENTS OFFLINE",
-            items: [
-              {
-                title: "Razorpay POS",
-                desc: "Accept Payments In-Store",
-                icon: "🏪",
-              },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "ACCEPT INTERNATIONAL PAYMENTS",
-            items: [
-              {
-                title: "International Payments",
-                desc: "Accept payments globally",
-                icon: "🌍",
-              },
-              {
-                title: "International Bank Transfers",
-                desc: "USD, GBP, EUR payments",
-                icon: "🏦",
-              },
-            ],
-          },
-        ],
-      },
-    ],
   },
+
   {
     name: "Partner",
-    mega: true,
-    columns: [
-      {
-        sections: [
-          {
-            title: "ACCEPT PAYMENTS ONLINE",
-            items: [
-              {
-                title: "Payment Aggregator",
-                desc: "Accepting payments made easy",
-                icon: "💳",
-              },
-              {
-                title: "Payment Gateway",
-                desc: "Payments on Website & App",
-                icon: "🌐",
-              },
-              {
-                title: "Payment Links",
-                desc: "Create & send links",
-                icon: "🔗",
-              },
-              {
-                title: "Payment Pages",
-                desc: "Get paid with personalized page",
-                icon: "📄",
-              },
-              { title: "QR Codes", desc: "Multi-feature QR", icon: "🔲" },
-              {
-                title: "UPI Payments",
-                badge: "NEW",
-                desc: "Complete UPI stack",
-                icon: "📲",
-              },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "PAYMENTS & SETTLEMENTS",
-            items: [
-              {
-                title: "Magic Checkout",
-                badge: "NEW",
-                desc: "Improve conversions",
-                icon: "⚡",
-              },
-              {
-                title: "Subscriptions",
-                desc: "Recurring payments",
-                icon: "🔁",
-              },
-              {
-                title: "Instant Settlement",
-                desc: "Payments settled faster",
-                icon: "⚡",
-              },
-              { title: "Optimizer", desc: "Manage gateways", icon: "🧠" },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "ACCEPT PAYMENTS OFFLINE",
-            items: [
-              {
-                title: "Razorpay POS",
-                desc: "Accept Payments In-Store",
-                icon: "🏪",
-              },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "ACCEPT INTERNATIONAL PAYMENTS",
-            items: [
-              {
-                title: "International Payments",
-                desc: "Accept payments globally",
-                icon: "🌍",
-              },
-              {
-                title: "International Bank Transfers",
-                desc: "USD, GBP, EUR payments",
-                icon: "🏦",
-              },
-            ],
-          },
-        ],
-      },
-    ],
   },
+
   {
-    name: "Resource",
-    mega: true,
-    columns: [
-      {
-        sections: [
-          {
-            title: "ACCEPT PAYMENTS ONLINE",
-            items: [
-              {
-                title: "Payment Aggregator",
-                desc: "Accepting payments made easy",
-                icon: "💳",
-              },
-              {
-                title: "Payment Gateway",
-                desc: "Payments on Website & App",
-                icon: "🌐",
-              },
-              {
-                title: "Payment Links",
-                desc: "Create & send links",
-                icon: "🔗",
-              },
-              {
-                title: "Payment Pages",
-                desc: "Get paid with personalized page",
-                icon: "📄",
-              },
-              { title: "QR Codes", desc: "Multi-feature QR", icon: "🔲" },
-              {
-                title: "UPI Payments",
-                badge: "NEW",
-                desc: "Complete UPI stack",
-                icon: "📲",
-              },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "PAYMENTS & SETTLEMENTS",
-            items: [
-              {
-                title: "Magic Checkout",
-                badge: "NEW",
-                desc: "Improve conversions",
-                icon: "⚡",
-              },
-              {
-                title: "Subscriptions",
-                desc: "Recurring payments",
-                icon: "🔁",
-              },
-              {
-                title: "Instant Settlement",
-                desc: "Payments settled faster",
-                icon: "⚡",
-              },
-              { title: "Optimizer", desc: "Manage gateways", icon: "🧠" },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "ACCEPT PAYMENTS OFFLINE",
-            items: [
-              {
-                title: "Razorpay POS",
-                desc: "Accept Payments In-Store",
-                icon: "🏪",
-              },
-            ],
-          },
-        ],
-      },
-
-      {
-        sections: [
-          {
-            title: "ACCEPT INTERNATIONAL PAYMENTS",
-            items: [
-              {
-                title: "International Payments",
-                desc: "Accept payments globally",
-                icon: "🌍",
-              },
-              {
-                title: "International Bank Transfers",
-                desc: "USD, GBP, EUR payments",
-                icon: "🏦",
-              },
-            ],
-          },
-        ],
-      },
-    ],
+    name: "About us",
+    href:"about"
   },
-  {
-    name: "Pricing",
-    mega: true,
-    columns: [
-      {
-        sections: [
-          {
-            title: "ACCEPT PAYMENTS ONLINE",
-            items: [
-              {
-                title: "Payment Aggregator",
-                desc: "Accepting payments made easy",
-                icon: "💳",
-              },
-              {
-                title: "Payment Gateway",
-                desc: "Payments on Website & App",
-                icon: "🌐",
-              },
-              {
-                title: "Payment Links",
-                desc: "Create & send links",
-                icon: "🔗",
-              },
-              {
-                title: "Payment Pages",
-                desc: "Get paid with personalized page",
-                icon: "📄",
-              },
-              { title: "QR Codes", desc: "Multi-feature QR", icon: "🔲" },
-              {
-                title: "UPI Payments",
-                badge: "NEW",
-                desc: "Complete UPI stack",
-                icon: "📲",
-              },
-            ],
-          },
-        ],
-      },
 
-      {
-        sections: [
-          {
-            title: "PAYMENTS & SETTLEMENTS",
-            items: [
-              {
-                title: "Magic Checkout",
-                badge: "NEW",
-                desc: "Improve conversions",
-                icon: "⚡",
-              },
-              {
-                title: "Subscriptions",
-                desc: "Recurring payments",
-                icon: "🔁",
-              },
-              {
-                title: "Instant Settlement",
-                desc: "Payments settled faster",
-                icon: "⚡",
-              },
-              { title: "Optimizer", desc: "Manage gateways", icon: "🧠" },
-            ],
-          },
-        ],
-      },
-    ],
+  {
+    name: "Contact us",
+    href:"contact"
+
   },
 ];
 
@@ -706,7 +156,7 @@ const FOOTER_COLUMNS = [
           "Payment Gateway",
           "Payment Pages",
           "Payment Links",
-          "Razorpay POS",
+          "Nixapay POS",
           "QR Codes",
           "Subscriptions",
           "Smart Collect",
@@ -746,7 +196,7 @@ const FOOTER_COLUMNS = [
         links: [
           "NixapayX",
           "Source to Pay",
-          "Current Accounts",
+          "Nixapay accounts",
           "Payouts",
           "Payout Links",
           "Corporate Credit Card",
@@ -811,10 +261,9 @@ const FOOTER_COLUMNS = [
       {
         title: "REGD. OFFICE ADDRESS",
         links: [
-          "NIXASOFT Software Limited",
-          "1st Floor, SJR Cyber",
-          "22 Laskar Hosur Road",
-          "Bengaluru, Karnataka, India",
+          "NIXASOFT Fintech Private Limated",
+          "1st Floor",
+          "Vadodara, Gujarat, India",
           "CIN: XXXXXXXXXX",
         ],
       },

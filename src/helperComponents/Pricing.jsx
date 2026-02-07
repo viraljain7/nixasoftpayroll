@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const plans = [
   {
@@ -7,7 +7,7 @@ const plans = [
     title: "Core Plan",
     subtitle: "For businesses just starting up",
     description: [
-      "A seamless starter package with essential banking features like a digital-first current account to help you build strong business finances.",
+      "A seamless starter package with essential banking features like a digital-first Nixapay account to help you build strong business finances.",
       "The Core plan offers a powerful dashboard with smooth payout experiences and mobile app access for banking on the go.",
     ],
     features: [
@@ -55,7 +55,7 @@ const plans = [
     cta: "Sign Up Now",
     highlighted: false,
   },
-]
+];
 
 const PricingSection = () => {
   return (
@@ -78,9 +78,7 @@ const PricingSection = () => {
             <div
               key={plan.id}
               className={`rounded-xl border shadow-sm p-6 flex flex-col justify-between ${
-                plan.highlighted
-                  ? "border-indigo-600"
-                  : "border-gray-200"
+                plan.highlighted ? "border-indigo-600" : "border-gray-200"
               }`}
             >
               {/* Title */}
@@ -144,7 +142,7 @@ const PricingSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default PricingSection
+export default PricingSection;

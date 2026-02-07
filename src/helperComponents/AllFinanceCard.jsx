@@ -49,7 +49,7 @@ const features = [
   },
   {
     title: "Payment Gateway",
-    desc: "Accept payments seamlessly with the complete Razorpay Payments Suite",
+    desc: "Accept payments seamlessly with the complete Nixapay Payments Suite",
     icon: CreditCard,
     color: "rose",
   },
@@ -86,7 +86,7 @@ const AllFinanceCard = () => {
           </h2>
           <p className="mt-4 text-slate-600 text-lg max-w-3xl mx-auto">
             Manage payouts, payments, payroll, taxes, and accounting from one
-            unified digital current account.
+            unified digital Nixapay account.
           </p>
         </div>
 

@@ -1,6 +1,6 @@
-import React from "react"
-import ctaBg from "@/assets/ctabg.png"
-import { MoveRightIcon } from "@/components/MoveRightIcon"
+import React from "react";
+import ctaBg from "@/assets/ctabg.png";
+import { MoveRightIcon } from "@/components/MoveRightIcon";
 
 const CTASection = () => {
   return (
@@ -18,7 +18,8 @@ const CTASection = () => {
       <div className="relative z-10 max-w-5xl mx-auto px-6 py-24 text-center">
         {/* Heading */}
         <h2 className="text-slate-900 text-4xl md:text-5xl font-bold leading-tight">
-          One current account. Total control over  <br className="hidden sm:block" />
+          One Nixapay account. Total control over{" "}
+          <br className="hidden sm:block" />
           your business finances?
         </h2>
 
@@ -36,12 +37,10 @@ const CTASection = () => {
           >
             Get Started <MoveRightIcon />
           </button>
-
-        
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CTASection
+export default CTASection;

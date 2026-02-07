@@ -14,6 +14,8 @@ import AllFinanceCard from "@/helperComponents/AllFinanceCard";
 
 export default function HeroPage() {
   return (
+
+    
     <div>
       <Hero />
       <BussinessCount />
