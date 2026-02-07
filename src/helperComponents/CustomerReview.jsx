@@ -68,8 +68,11 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className=" bg-linear-to-br from-[#f5f7ff] via-[#eef2ff] to-white py-20 px-4">
-      <div className="max-w-7xl mx-auto">
+    <section className=" relative  py-20 px-4">
+          <div className="absolute inset-0 bg-linear-to-br from-[#f5f7ff] via-white to-[#eef2ff]" />
+      <div className="absolute -bottom-40 -left-40 h-[28rem] w-[28rem] rounded-full bg-blue-400/20 blur-3xl" />
+
+      <div  className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
           <h2 className="text-3xl font-bold text-slate-900">

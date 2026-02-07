@@ -59,7 +59,7 @@ const plans = [
 
 const PricingSection = () => {
   return (
-    <section className="p-4">
+    <section className="p-4 my-16">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center">

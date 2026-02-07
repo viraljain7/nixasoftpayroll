@@ -8,6 +8,7 @@ import PricingSection from "@/helperComponents/Pricing";
 import NixasoftX from "@/helperComponents/NixasoftX";
 import Faq from "@/helperComponents/Faq";
 import CustomerReview from "@/helperComponents/CustomerReview";
+import CTASection from "@/helperComponents/CTASection";
 
 export default function HeroPage() {
   return (
@@ -20,6 +21,7 @@ export default function HeroPage() {
       <Section/>
       <PricingSection/>
       <CustomerReview/>
+      <CTASection/>
       <Faq/>
     </div>
   );
