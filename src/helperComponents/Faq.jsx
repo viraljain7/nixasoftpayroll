@@ -119,10 +119,10 @@ const faqs = [
 export default function Faq() {
   return (<>
     <div className="text-center my-32 mb-8">
-          <h2 className="text-3xl md:text-4xl font-semibold text-slate-900">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
             Frequently asked questions
           </h2>
-          <p className="text-slate-600 mt-3">
+          <p className="mt-4 text-slate-600 text-lg">
 Explore our FAQ section to find answers about Nixasoft's business financial solutions          </p>
         </div>
     <Accordion

@@ -63,10 +63,10 @@ const PricingSection = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center">
-          <h2 className="text-slate-900 text-3xl font-bold">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
             Choose the right plan for your business
           </h2>
-          <p className="text-slate-600 mt-3 text-[15px]">
+          <p className="mt-4 text-slate-600 text-lg">
             Flexible banking plans designed for startups, growing teams, and
             large-scale businesses.
           </p>

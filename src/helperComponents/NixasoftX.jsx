@@ -46,10 +46,10 @@ export default function NixasoftX() {
       <div className="relative max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
             Compare Account Types
           </h2>
-          <p className="mt-3 text-slate-600 text-[15px]">
+          <p className="mt-4 text-slate-600 text-lg">
             See how modern business banking compares to traditional accounts
           </p>
         </div>

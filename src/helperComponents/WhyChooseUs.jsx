@@ -43,12 +43,13 @@ function WhyChooseUs() {
       
 
 
-  <h3 className="text-center text-2xl sm:text-3xl font-semibold text-gray-900">
+  <h3 className="text-center text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
             Why choose us
           </h3>
+
         
 
-          <p className="mt-5 text-gray-600 text-base text-center">
+          <p className="mt-5  text-slate-600 text-lg text-center">
             Built with reliability, automation, and control at its core—so your
             operations grow without friction.
           </p>

@@ -48,7 +48,7 @@ function Section() {
       <div className="absolute -bottom-40 -left-40 h-[28rem] w-[28rem] rounded-full bg-blue-400/20 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl ">
-        <h3 className="text-center text-2xl sm:text-3xl font-semibold text-gray-900 my-8">
+        <h3 className="text-center text-4xl md:text-5xl font-bold text-slate-900 leading-tight my-8">
             Powering seamless money <br/> movement for modern businesses.
        </h3>
       </div>

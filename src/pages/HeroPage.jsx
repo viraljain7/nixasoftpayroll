@@ -9,6 +9,7 @@ import NixasoftX from "@/helperComponents/NixasoftX";
 import Faq from "@/helperComponents/Faq";
 import CustomerReview from "@/helperComponents/CustomerReview";
 import CTASection from "@/helperComponents/CTASection";
+import StepperForNewAcc from "@/helperComponents/StepperForNewAcc";
 
 export default function HeroPage() {
   return (
@@ -18,6 +19,7 @@ export default function HeroPage() {
       <Logos />
       <WhyChooseUs />
       <NixasoftX/>
+      <StepperForNewAcc/>
       <Section/>
       <PricingSection/>
       <CustomerReview/>

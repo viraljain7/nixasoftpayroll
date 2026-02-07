@@ -75,10 +75,10 @@ const Testimonials = () => {
       <div  className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl font-bold text-slate-900">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
             What our clients say
           </h2>
-          <p className="mt-3 text-slate-600 text-[15px]">
+          <p className="mt-4 text-slate-600 text-lg">
             Trusted by businesses across industries to simplify finance operations.
           </p>
         </div>
