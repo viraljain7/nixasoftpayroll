@@ -41,7 +41,7 @@ function Section() {
 ];
 
   return (
-    <section className={"my-16 relative isolate overflow-hidden py-28 mb-0"}>
+    <section className={"my-16 mt-0 relative isolate overflow-hidden py-28 mb-0"}>
       {/* Background */}
       <div className="absolute inset-0 bg-linear-to-br from-[#f5f7ff] via-white to-[#eef2ff]" />
       <div className="absolute -top-40 -right-40 h-[28rem] w-[28rem] rounded-full bg-indigo-400/20 blur-3xl" />

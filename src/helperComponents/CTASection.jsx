@@ -28,11 +28,11 @@ const CTASection = () => {
         </p>
 
         {/* Buttons */}
-        <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+        <div className="mt-10 flex justify-center gap-4">
           {/* Primary */}
           <button
             type="button"
-            className="px-8 py-3 rounded-lg bg-indigo-600 text-white font-semibold text-[15px] hover:bg-indigo-700 transition w-1/3 flex justify-center items-center gap-4"
+            className="px-8 py-3 rounded-lg bg-indigo-600 text-white font-semibold text-[15px] hover:bg-indigo-700 transition md:w-1/3 flex justify-center items-center gap-4 w-full "
           >
             Get Started <MoveRightIcon />
           </button>

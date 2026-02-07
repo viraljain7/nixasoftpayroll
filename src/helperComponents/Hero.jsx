@@ -7,11 +7,11 @@ export default function Hero() {
   return (
 <section className="relative isolate overflow-hidden">
   {/* Morphic background */}
-  <div className="absolute inset-0 bg-linear-to-br from-[#f5f7ff] via-[#eef2ff] to-white" />
+  <div className="absolute inset-0 bg-linear-to-br from-[#f5f7ff] via-[#eef2ff] to-white"  />
 
   {/* Content */}
   <Layout className="relative">
-    <section className="flex flex-col md:flex-row items-center justify-between py-16 md:py-24 gap-12">
+    <section className="flex flex-col md:flex-row items-center justify-between py-16 md:py-0  gap-12">
       
       {/* Left Content */}
       <div className="flex flex-col gap-6 varela-font max-w-xl text-center md:text-left">
