@@ -61,7 +61,7 @@ export default function Footer() {
 
       {/* Hover Effect Branding */}
       {/* <div className="bg-white/40 flex items-center justify-center "> */}
-       <div className="bg-background relative h-125 w-full overflow-hidden rounded-lg border">
+       <div className="bg-background relative h-150 w-full overflow-hidden rounded-lg border">
        <FlickeringGrid
         className="absolute inset-0 z-0 mask-[radial-gradient(450px_circle_at_center,white,transparent)]"
         squareSize={10}

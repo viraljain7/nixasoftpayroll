@@ -691,14 +691,11 @@ const navigation = [
           },
         ],
       },
-
-
     ],
   },
 ];
 
-
- const FOOTER_COLUMNS = [
+const FOOTER_COLUMNS = [
   /* ---------------- COLUMN 1 ---------------- */
   {
     sections: [
@@ -719,7 +716,7 @@ const navigation = [
       },
       {
         title: "PAYROLL",
-        links: ["RazorpayX Payroll"],
+        links: ["NixapayX Payroll"],
       },
       {
         title: "BECOME A PARTNER",
@@ -747,7 +744,7 @@ const navigation = [
       {
         title: "BANKING PLUS",
         links: [
-          "RazorpayX",
+          "NixapayX",
           "Source to Pay",
           "Current Accounts",
           "Payouts",
@@ -810,7 +807,7 @@ const navigation = [
         title: "HELP & SUPPORT",
         links: ["Support", "Knowledge Base"],
       },
-    
+
       {
         title: "REGD. OFFICE ADDRESS",
         links: [
@@ -824,7 +821,5 @@ const navigation = [
     ],
   },
 ];
-
-
 
 export { navigation, FOOTER_COLUMNS };

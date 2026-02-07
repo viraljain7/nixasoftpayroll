@@ -37,7 +37,7 @@ export default function Navbar() {
         <div className="flex shrink-0 items-center  rounded-md  py-1">
           <img
             src="https://files.readme.io/e216c9fb142791d5fa09241eb2175e580b0421d964ba63e12a1efa2ec47c7ab7-small-nixasoft.png"
-            className="h-10 w-36 mb-2"
+            className="h-16 w-44 mb-2"
             alt="Logo"
           />
         </div>

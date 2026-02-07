@@ -82,7 +82,7 @@ const AllFinanceCard = () => {
         {/* Header */}
         <div className="text-center mb-14">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight max-w-4xl mx-auto">
-            A current account designed for end-to-end financial operations
+            A Nixapay account designed for end-to-end financial operations
           </h2>
           <p className="mt-4 text-slate-600 text-lg max-w-3xl mx-auto">
             Manage payouts, payments, payroll, taxes, and accounting from one

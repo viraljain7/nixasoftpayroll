@@ -7,7 +7,7 @@ const steps = [
   },
   {
     id: 2,
-    text: "A RazorpayX representative will contact you to verify your details",
+    text: "A NixapayX representative will contact you to verify your details",
   },
   {
     id: 3,
@@ -15,7 +15,7 @@ const steps = [
   },
   {
     id: 4,
-    text: "Log in to your RazorpayX Dashboard to get started!",
+    text: "Log in to your NixapayX Dashboard to get started!",
   },
 ];
 
@@ -26,10 +26,10 @@ const StepperForNewAcc = () => {
         {/* Header */}
         <div className="max-w-4xl mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-            How to open a RazorpayX powered <br /> Current Account Online?
+            How to open a NixapayX powered <br /> Current Account Online?
           </h2>
           <p className="mt-4 text-slate-600 text-lg">
-            RazorpayX Business Banking+ comes with a digital current account that
+            NixapayX Business Banking+ comes with a digital current account that
             can be opened entirely online.
           </p>
         </div>
