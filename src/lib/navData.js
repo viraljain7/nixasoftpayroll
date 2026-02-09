@@ -17,16 +17,7 @@ import {
 const acceptPaymentsOnline = {
   title: "ACCEPT PAYMENTS ONLINE",
   items: [
-    {
-      title: "Payment Aggregator",
-      desc: "Accepting payments made easy",
-      icon: HiCreditCard,
-    },
-    {
-      title: "Payment Gateway",
-      desc: "Payments on Website & App",
-      icon: HiGlobeAlt,
-    },
+  
     {
       title: "Payment Links",
       desc: "Create & send links",
@@ -106,18 +97,15 @@ const internationalPayments = {
 };
 
 const navigation = [
-  {
-    name: "Payments",
-  },
+
 
   {
-    name: "Banking+",
+    name: "Solution",
     mega: true,
     columns: [
       { sections: [acceptPaymentsOnline] },
       { sections: [paymentsAndSettlements] },
       { sections: [offlinePayments] },
-      { sections: [internationalPayments] },
     ],
   },
 
@@ -135,13 +123,12 @@ const navigation = [
 
   {
     name: "About us",
-    href:"about"
+    href: "about",
   },
 
   {
     name: "Contact us",
-    href:"contact"
-
+    href: "contact",
   },
 ];
 
@@ -152,8 +139,7 @@ const FOOTER_COLUMNS = [
       {
         title: "ACCEPT PAYMENTS",
         links: [
-          "Payment Aggregator",
-          "Payment Gateway",
+          
           "Payment Pages",
           "Payment Links",
           "Nixapay POS",
@@ -261,10 +247,10 @@ const FOOTER_COLUMNS = [
       {
         title: "REGD. OFFICE ADDRESS",
         links: [
-          "NIXASOFT Fintech Private Limated",
-          "1st Floor",
-          "Vadodara, Gujarat, India",
-          "CIN: XXXXXXXXXX",
+          "NIXASOFT FINTECH PRIVATE LIMITED",
+          "TF OFFICE NO 19,20,21",
+          "SHREE SIDDHESHWAR PLAZA, Waghodia Road",
+          "Vadodara, Vadodara- 390025, Gujarat, India",
         ],
       },
     ],

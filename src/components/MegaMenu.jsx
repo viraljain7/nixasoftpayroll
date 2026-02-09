@@ -2,7 +2,7 @@ import { Menu, MenuButton, MenuItems } from "@headlessui/react";
 
 export function MegaMenu({ item }) {
   return (
-    <Menu as="div" className="relative">
+    <Menu as="div" className="relative ml-10">
       {/* Trigger */}
       <MenuButton
         className="px-3 py-2 text-sm font-semibold text-gray-800 rounded-md border border-transparent hover:text-blue-900 hover:border-blue-900 transition"
@@ -14,11 +14,11 @@ export function MegaMenu({ item }) {
       <MenuItems
         className="
           absolute left-1/2 top-full mt-4 w-screen max-w-6xl -translate-x-1/2
-          z-9999
+          z-9999 
         "
       >
-        <div className="rounded-xl bg-white shadow-2xl border border-gray-200">
-          <div className="px-10 py-8">
+        <div className="rounded-xl bg-white shadow-2xl border border-gray-200 ml-40">
+          <div className="px-10 py-8 ml-16">
             <div className="grid gap-12 grid-cols-[repeat(auto-fit,minmax(260px,1fr))]">
               {item.columns.map((column, colIdx) => (
                 <div key={colIdx} className="space-y-8">
