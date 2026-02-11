@@ -1,7 +1,6 @@
 /* -------------------- NAV DATA (SCALABLE) -------------------- */
 
 import {
-  HiCreditCard,
   HiGlobeAlt,
   HiLink,
   HiDocumentText,
@@ -10,9 +9,84 @@ import {
   HiLightningBolt,
   HiRefresh,
   HiPuzzle,
-  HiOfficeBuilding,
   HiCurrencyDollar,
+
+  HiBookOpen,
+  HiAcademicCap,
+  HiCalendar,
+  HiDocumentReport,
+  HiUserGroup,
+  HiCode,
+  HiTerminal,
+  HiPlay,
+  HiBriefcase,
+  HiShoppingCart,
+  
+  HiOfficeBuilding,
+  HiUser,
+  HiCalculator,
+  HiSearch,
+  HiBadgeCheck,
+  HiTrendingUp,
+  HiChartBar,
 } from "react-icons/hi";
+
+
+
+import {
+
+} from "react-icons/hi";
+
+/* -------- AWARENESS -------- */
+const awareness = {
+  title: "AWARENESS",
+  items: [
+    { title: "Blog", icon: HiBookOpen },
+    { title: "Learn", icon: HiAcademicCap },
+    { title: "Events", icon: HiCalendar },
+    { title: "White Papers", icon: HiDocumentReport },
+    { title: "Customer Stories", icon: HiUserGroup },
+  ],
+};
+
+/* -------- DEVELOPERS -------- */
+const developers = {
+  title: "DEVELOPERS",
+  items: [
+    { title: "Developer Docs", icon: HiCode },
+    { title: "Integrations", icon: HiPuzzle },
+    { title: "API Reference", icon: HiTerminal },
+    { title: "API Playground", icon: HiPlay },
+    { title: "Onboarding APIs", icon: HiBriefcase },
+  ],
+};
+
+/* -------- SOLUTIONS -------- */
+const solutions = {
+  title: "SOLUTIONS",
+  items: [
+    { title: "SaaS", icon: HiBriefcase },
+    { title: "E-Commerce", icon: HiShoppingCart },
+    { title: "Education", icon:HiShoppingCart  },
+    { title: "BFSI", icon: HiOfficeBuilding },
+    { title: "Freelance", icon: HiUser },
+  ],
+};
+
+/* -------- FREE TOOLS -------- */
+const freeTools = {
+  title: "FREE TOOLS",
+  items: [
+    { title: "GST Calculator", icon: HiCalculator },
+    { title: "Online TDS Payment", icon: HiCalculator },
+    { title: "GST Number Search", icon: HiSearch },
+    { title: "GST Search by PAN", icon: HiBadgeCheck },
+    { title: "ROI Calculator",  icon: HiTrendingUp },
+    { title: "CAGR Calculator",  icon: HiTrendingUp },
+    { title: "EBITDA Calculator",  icon: HiChartBar },
+  ],
+};
+
 
 const acceptPaymentsOnline = {
   title: "ACCEPT PAYMENTS ONLINE",
@@ -109,18 +183,33 @@ const navigation = [
     ],
   },
 
+
   {
     name: "Payroll",
+    href:"payroll-enterprise"
   },
 
   {
     name: "Engage",
+    href: "engage",
+
   },
 
   {
     name: "Partner",
   },
+    {
+    name: "Resources",
+    mega: true,
+    columns: [
+    { sections: [awareness] },
+    { sections: [developers] },
+    { sections: [solutions] },
+    { sections: [freeTools] },
 
+    ],
+  },
+  
   {
     name: "About us",
     href: "about",

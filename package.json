@@ -16,6 +16,7 @@
     "@heroui/react": "^2.8.8",
     "@heroui/system": "^2.4.26",
     "@heroui/theme": "^2.4.26",
+    "@tabler/icons-react": "^3.36.1",
     "axios": "^1.13.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

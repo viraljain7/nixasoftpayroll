@@ -87,7 +87,7 @@ export const TextHoverEffect = ({
         textAnchor="middle"
         dominantBaseline="middle"
         strokeWidth="0.3"
-        className="fill-transparent stroke-neutral-200 font-[helvetica] text-6xl font-bold dark:stroke-neutral-800 text-black"
+        className="fill-black/20 stroke-neutral-200 font-[helvetica] text-6xl font-bold dark:stroke-neutral-800 text-black"
         initial={{ strokeDashoffset: 1000, strokeDasharray: 1000 }}
         animate={{
           strokeDashoffset: 0,
@@ -107,7 +107,9 @@ export const TextHoverEffect = ({
         stroke="url(#textGradient)"
         strokeWidth="0.3"
         mask="url(#textMask)"
-        className="fill-white font-[helvetica] text-6xl font-bold text-black">
+        className="fill-amber-50 backdrop-blur-3xl cursor-pointer font-[helvetica] text-6xl font-bold text-black"
+        
+        >
         {text}
       </text>
     </svg>

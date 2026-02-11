@@ -61,15 +61,15 @@ export default function Footer() {
 
       {/* Hover Effect Branding */}
       {/* <div className="bg-white/40 flex items-center justify-center "> */}
-       <div className="bg-background relative h-150 w-full overflow-hidden rounded-lg border">
+       <div className="bg-background relative h-100 w-full overflow-hidden rounded-lg border">
        <FlickeringGrid
         className="absolute inset-0 z-0 mask-[radial-gradient(450px_circle_at_center,white,transparent)]"
-        squareSize={10}
+        squareSize={25}
         gridGap={10}
-        color="#60A5FA"
+        color="#bbb"
         maxOpacity={0.9}
-        flickerChance={0.2}
-        height={400}
+        flickerChance={0.3}
+        height={900}
       />
         <TextHoverEffect text="NIXASOFT" className="bg-black"/>
       </div>

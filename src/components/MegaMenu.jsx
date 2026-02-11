@@ -2,11 +2,9 @@ import { Menu, MenuButton, MenuItems } from "@headlessui/react";
 
 export function MegaMenu({ item }) {
   return (
-    <Menu as="div" className="relative ml-10">
+    <Menu as="div" className="relative ">
       {/* Trigger */}
-      <MenuButton
-        className="px-3 py-2 text-sm font-semibold text-gray-800 rounded-md border border-transparent hover:text-blue-900 hover:border-blue-900 transition"
-      >
+      <MenuButton className="px-3 py-2 text-sm font-semibold text-gray-800 rounded-md border border-transparent hover:text-blue-900 hover:border-blue-900 transition cursor-pointer">
         {item.name}
       </MenuButton>
 
@@ -14,7 +12,7 @@ export function MegaMenu({ item }) {
       <MenuItems
         className="
           absolute left-1/2 top-full mt-4 w-screen max-w-6xl -translate-x-1/2
-          z-9999 
+          z-9999 outline-none
         "
       >
         <div className="rounded-xl bg-white shadow-2xl border border-gray-200 ml-40">
@@ -30,24 +28,30 @@ export function MegaMenu({ item }) {
 
                       <ul className="space-y-5">
                         {section.items.map((link) => (
-                        <li key={link.title} className="flex gap-4">
-  <div className="h-10 w-10 rounded-full bg-indigo-100/25 flex items-center justify-center">
-    {link.icon && <link.icon className="h-5 w-5 text-black" />}
-  </div>
+                          <li
+                            key={link.title}
+                            className="flex gap-4 items-center cursor-pointer"
+                          >
+                            <div className="h-6 w-6 rounded-full bg-indigo-100/25 flex items-center justify-center">
+                              {link.icon && (
+                                <link.icon className="h-4 w-4 text-black" />
+                              )}
+                            </div>
 
-  <div>
-    <p className="font-semibold text-gray-900 flex items-center gap-2">
-      {link.title}
-      {link.badge && (
-        <span className="text-xs bg-green-100 text-green-600 px-2 rounded-full">
-          {link.badge}
-        </span>
-      )}
-    </p>
-    <p className="text-sm text-gray-600">{link.desc}</p>
-  </div>
-</li>
-
+                            <div>
+                              <p className="font-semibold text-gray-900 flex items-center gap-2">
+                                {link.title}
+                                {link.badge && (
+                                  <span className="text-xs bg-green-100 text-green-600 px-2 rounded-full">
+                                    {link.badge}
+                                  </span>
+                                )}
+                              </p>
+                              <p className="text-sm text-gray-600">
+                                {link.desc}
+                              </p>
+                            </div>
+                          </li>
                         ))}
                       </ul>
                     </div>

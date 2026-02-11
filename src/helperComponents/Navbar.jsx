@@ -50,7 +50,7 @@ export default function Navbar() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="px-3 py-2 text-sm font-semibold text-gray-800 rounded-md hover:bg-gray-100 hover:text-black transition"
+                      className="px-3 py-2 text-sm font-semibold text-gray-800 rounded-md hover:bg-gray-100 hover:text-black transition cursor-pointer"
                     >
                       {item.name}
                     </a>
@@ -62,9 +62,10 @@ export default function Navbar() {
               <div className="hidden sm:flex items-center gap-3">
               
 
-                <button className="bg-blue-500 hover:bg-blue-700 transition px-4 py-1 font-bold text-white rounded-xl  flex items-center gap-1 cursor-pointer">
+                <button className="bg-blue-500 hover:bg-blue-700 transition px-4 py-1 font-bold text-white rounded-xs  flex items-center gap-1 cursor-pointer">
                   Log in <MoveRightIcon className="size-4" />
                 </button>
+
               </div>
             </div>
           </div>

@@ -1,72 +1,6 @@
 import React from "react";
 
-const testimonials = [
-  {
-    id: 1,
-    name: "Amit Verma",
-    role: "Founder, SaaS Startup",
-    review:
-      "With NixapayX, our entire finance workflow became seamless. From automated payouts to compliance handling, everything works reliably at scale. It has significantly reduced operational friction for our team.",
-  },
-  {
-    id: 2,
-    name: "Neha Sharma",
-    role: "Finance Lead, E-commerce Company",
-    review:
-      "NixapayX helped us centralize all our business payments and approvals in one place. The transparency and control it provides has made our finance operations far more efficient and audit-ready.",
-  },
-  {
-    id: 3,
-    name: "Rahul Mehta",
-    role: "COO, Fintech Firm",
-    review:
-      "What truly stands out is the level of automation NixapayX offers. Payroll, vendor payments, and compliance management now run smoothly with minimal manual intervention, saving us hundreds of hours every quarter.",
-  },
-  {
-    id: 4,
-    name: "Priya Nair",
-    role: "Operations Head, Logistics Company",
-    review:
-      "The ability to manage multi-user access and approval workflows has been a game changer for us. NixapayX gives us complete visibility and control without slowing down daily operations.",
-  },
-  {
-    id: 5,
-    name: "Kunal Shah",
-    role: "Founder, Digital Agency",
-    review:
-      "We onboarded NixapayX and set up our complete payouts and payroll system within a few hours. The platform helped us reduce finance overhead by over 35%.",
-  },
-  {
-    id: 6,
-    name: "Sneha Iyer",
-    role: "HR Manager, Tech Company",
-    review:
-      "NixapayX has transformed how we manage vendor payments and employee salaries. Timely payouts, automated compliance, and clear reporting make it extremely reliable.",
-  },
-  {
-    id: 7,
-    name: "Arjun Malhotra",
-    role: "CFO, Growth-stage Startup",
-    review:
-      "From invoice uploads to approvals and automated accounting, NixapayX covers every aspect of our payment workflow. It has helped us scale confidently without compliance concerns.",
-  },
-  {
-    id: 8,
-    name: "Pooja Desai",
-    role: "Finance Director, Manufacturing Firm",
-    review:
-      "Switching to NixapayX resulted in significant cost savings and better cash flow visibility. The platform’s reliability has made it a trusted finance partner for us.",
-  },
-  {
-    id: 9,
-    name: "Siddharth Kapoor",
-    role: "Managing Partner, Consulting Firm",
-    review:
-      "NixapayX enables us to deliver faster and more reliable financial solutions to our clients. The automation and reporting features have strengthened our credibility.",
-  },
-];
-
-const Testimonials = () => {
+const Testimonials = ({ testimonials }) => {
   return (
     <section className=" relative  py-20 px-4">
       <div className="absolute inset-0 bg-linear-to-br from-[#f5f7ff] via-white to-[#eef2ff]" />
@@ -86,11 +20,21 @@ const Testimonials = () => {
 
         {/* Testimonials Grid */}
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-6">
-          {testimonials.map((item) => (
+          {testimonials.map((item, index) => (
             <div
-              key={item.id}
+              key={item.id || index}
               className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition"
             >
+              {item.logo && (
+                <div className="mb-4">
+                  <img
+                    src={item.logo}
+                    alt={item.name}
+                    className="h-6 max-w-25 object-contain"
+                  />
+                </div>
+              )}
+
               <p className="text-slate-700 text-[15px] leading-relaxed">
                 “{item.review}”
               </p>
