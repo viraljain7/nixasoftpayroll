@@ -1,6 +1,7 @@
 import AllFinanceCard from "@/helperComponents/AllFinanceCard";
 import BusinessCount from "@/helperComponents/BussinessCount";
 import Testimonials from "@/helperComponents/CustomerReview";
+import { EmployeeOrganizeCard } from "@/helperComponents/EmployeeOrganizeCard";
 import EnterPriseHero from "@/helperComponents/EnterPriseHero";
 import Faq from "@/helperComponents/Faq";
 import { Logos } from "@/helperComponents/Logos";
@@ -17,7 +18,9 @@ function EnterPrisePage() {
 
       <BusinessCount />
       <Logos />
+
       <AllFinanceCard page="engage"/>
+      <EmployeeOrganizeCard/>
       <StepperForNewAcc page="engage" className="mt-16" />
       <Testimonials testimonials={testimonials} />
       <Faq faqs={enterprisePayrollFaqs} />
