@@ -37,7 +37,7 @@ const features = [
   },
   {
     title: "Seamless Integrations Platform",
-    text: "Connect RazorpayX Payroll with your existing HRMS and enterprise systems using our powerful and scalable API infrastructure.",
+    text: "Connect NixapayX Payroll with your existing HRMS and enterprise systems using our powerful and scalable API infrastructure.",
     li: [
       "45+ integration partners across HRMS, attendance, benefits, insurance, and more",
       "Ensure consistency and accuracy with automatic data synchronization",
