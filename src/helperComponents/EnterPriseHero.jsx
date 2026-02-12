@@ -1,8 +1,8 @@
 import React from 'react'
-
+import payroll from "@/assets/payroll.png"
 function EnterPriseHero() {
   return (
-      <div class="bg-gray-50">
+      <div class="bg-[#fff]">
         <section class="pt-12 pb-12 sm:pb-16 lg:pt-8">
           <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-16">
@@ -111,7 +111,7 @@ function EnterPriseHero() {
               <div>
                 <img
                   class="w-full"
-                  src="https://d33wubrfki0l68.cloudfront.net/d6f1462500f7670e0db6b76b35054a081679a5a0/0ce15/images/hero/5.1/illustration.png"
+                  src={payroll}
                   alt=""
                 />
               </div>

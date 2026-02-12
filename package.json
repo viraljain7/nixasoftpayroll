@@ -16,6 +16,7 @@
     "@heroui/react": "^2.8.8",
     "@heroui/system": "^2.4.26",
     "@heroui/theme": "^2.4.26",
+    "@react-three/fiber": "^10.0.0-alpha.2",
     "@tabler/icons-react": "^3.36.1",
     "axios": "^1.13.4",
     "class-variance-authority": "^0.7.1",
@@ -23,7 +24,7 @@
     "cobe": "^0.6.5",
     "framer-motion": "^12.31.2",
     "lucide-react": "^0.563.0",
-    "motion": "^12.33.0",
+    "motion": "^12.34.0",
     "radix-ui": "^1.4.3",
     "react": "19.2.4",
     "react-dom": "19.2.4",
@@ -31,13 +32,15 @@
     "react-router": "^7.13.0",
     "react-router-dom": "^7.13.0",
     "react-tweet": "^3.3.0",
-    "tailwind-merge": "^3.4.0"
+    "tailwind-merge": "^3.4.0",
+    "three": "^0.182.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@tailwindcss/vite": "^4.1.18",
     "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.182.0",
     "@vitejs/plugin-react": "^5.1.1",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
